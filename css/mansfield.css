@@ -14,7 +14,7 @@ header#primary nav a:link { color: #FCFCFC; padding: 0px 20px; text-decoration: 
 main#page_content { color: #614D2C; display: block; padding: 5px; z-index: 10; }
 main#page_content div, main#page_content nav, main#page_content article {  }
 main#page_content nav, main#page_content article { display: inline-block; vertical-align: top; }
-main#page_content nav { width: 20%; }
+main#page_content nav { border-bottom: 3px solid #B3A870; border-top: 3px solid #B3A870; width: 20%; }
 main#page_content article { }
 main#page_content article header h1 { margin: 0px; }
 
