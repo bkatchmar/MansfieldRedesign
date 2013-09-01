@@ -9,6 +9,7 @@ header#primary div#header_primary { color: #A5A370; }
 header#primary div#header_primary div { display: inline-block; margin: 0px auto; width: 33%; }
 header#primary nav { margin: 0px auto; padding: 10px 0px 0px 0px; width: 980px; }
 header#primary nav a:link { color: #FCFCFC; padding: 0px 20px; text-decoration: none; }
+header#primary nav a:visited { color: #FCFCFC; padding: 0px 20px; text-decoration: none; }
 
 /* Main Specifics */
 main#page_content { color: #614D2C; display: block; padding: 5px; z-index: 10; }
@@ -16,16 +17,23 @@ main#page_content nav, main#page_content article { display: inline-block; vertic
 main#page_content nav { border-bottom: 3px solid #B3A870; border-top: 3px solid #B3A870; margin: 0px 25px 0px 0px; width: 20%; }
 main#page_content nav div { border-bottom: 1px solid #B1AA66; padding: 4px 0px; }
 main#page_content nav div a:link { color: #614D2C; display: block; text-decoration: none; }
+main#page_content nav div a:visited { color: #614D2C; display: block; text-decoration: none; }
 main#page_content nav div a.selected:link { color: #000; }
+main#page_content nav div a.selected:visited { color: #000; }
 main#page_content article { color: #000; width: 75%; }
 main#page_content article header h1 { margin: 0px; text-transform: uppercase; }
 
 /* DIV Section for packages */
-div#packages { margin: 0px auto; width: 980px; }
-div#packages div.package { display: inline-block; width: 214px; }
+div#packages { margin: 0px auto; padding: 5px; width: 980px; }
+div#packages div.package { display: inline-block; width: 24%; }
 div#packages div.package div.image { border: 2px solid #9B9062; }
 div#packages div.package div.header { color: #645131; font-weight: bold; }
 div#packages div.package div.text { }
 
 /* Footer Specifics */
-footer { color: #A38E6F; z-index: 30; }
+footer { color: #877A57; padding: 5px; z-index: 30; }
+footer div#mailing_list, footer div#social_media { display: inline-block; width: 49%; }
+footer div#social_media { text-align: right; }
+footer .footer_information { font-size: 12px; padding: 3px 0px; text-align: center; text-transform: uppercase; }
+footer nav.footer_information div { display: inline-block; }
+footer .footer_information span.hotel_name { padding-right: 10px; }
