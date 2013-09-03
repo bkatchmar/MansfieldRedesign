@@ -1,0 +1,21 @@
+﻿/* Booking Engine Div */
+div.bookingengine { background-color: #000; display: inline-block; width: 330px; }
+div.bookingengine input[type="text"] { background-color: #000; border: 1px solid #40422C; color: #ABA583; padding: 2px 5px; }
+div.bookingengine input[type="text"].date { width: 105px; }
+div.bookingengine input[type="text"].number { width: 10px; }
+div.bookingengine div.section { border-bottom: 2px dotted #5B5C4E; margin: 0px auto; padding: 5px 0px; width: 90%; }
+div.bookingengine div.section span { color: #9A9B96; display: inline-block; height: 22px; font-size: 12px; padding: 0px 5px; vertical-align: middle; }
+div.bookingengine div.section span a:link { color: #ABA583; }
+div.bookingengine div.section span a:visited { color: #ABA583; }
+div.bookingengine div.section span.closer { float: right; }
+div.bookingengine div.section span.closer a:link { color: #807853; font-weight: bold; text-decoration: none; }
+div.bookingengine div.section span.closer a:visited { color: #807853; font-weight: bold; text-decoration: none; }
+div.bookingengine div.section div.more_options { padding: 5px 0px 0px 0px; visibility: visible; }
+div.bookingengine div.section div.more_options span { padding: 3px 0px; }
+div.bookingengine div.section div.more_options input[type="text"].option { width: 125px; }
+
+/* Placeholder Text */
+::-webkit-input-placeholder { color: #ABA583; }
+::-moz-placeholder { color: #ABA583; } /* FireFox 19+ */
+:-ms-input-placeholder { color: #ABA583; } /* IE */
+input:-moz-placeholder { color: #ABA583; }

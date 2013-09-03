@@ -1,22 +1,18 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>The Mansfield Hotel Generic Page</title>
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <![endif]-->
-    <link rel="Stylesheet" href="css/mansfield.css" />
-    <link rel="Stylesheet" href="css/bookingengine.css" />
+    <link rel="Stylesheet" href="css/mansfield_html4.css" />
     <meta charset="UTF-8" />
 </head>
 <body>
-    <header id="primary">
+    <div class="header" id="primary">
         <div id="header_primary">
             <div id="hotel_phones">800.255.5167 &#183; 212.227.8700</div>
             <div id="hotel_name">The Mansfield</div>
             <div id="hotel_address">12 WEST 44TH STREET NYC 10036</div>
         </div>
-        <nav>
+        <div class="nav">
             <a href="#">Our Hotel</a>
             <a href="#">Reservations</a>
             <a href="#">Accommodations</a>
@@ -24,11 +20,11 @@
             <a href="#">Packages</a>
             <a href="#">Restaurant &amp; Bar</a>
             <a href="#">Meetings &amp; Events</a>
-        </nav>
-    </header>
-    <main id="page_content">
+        </div>
+    </div>
+    <div id="page_content">
         <div id="hero_image_gallery">Put the image gallery here</div>
-        <nav>
+        <div class="nav">
             <div><a href="#" class="selected">Our Hotel</a></div>
             <div><a href="#">Service &amp; Amenities</a></div>
             <div><a href="#">Loyalty Program</a></div>
@@ -36,9 +32,9 @@
             <div><a href="#">Guest Testimonial</a></div>
             <div><a href="#">Press Room</a></div>
             <div><a href="#">Stories</a></div>
-        </nav>
-        <article>
-            <header><h1>Welcome To The Mansfield</h1></header>
+        </div>
+        <div class="article">
+            <div class="header"><h1>Welcome To The Mansfield</h1></div>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras blandit sapien non
                 lorem adipiscing, non fringilla nunc vehicula. Vestibulum imperdiet libero sodales,
@@ -61,8 +57,8 @@
                 Phasellus et congue nulla. Phasellus et neque egestas, commodo mauris nec, tincidunt
                 urna. Cras id viverra quam. Maecenas bibendum orci ut nunc fermentum scelerisque.
             </p>
-        </article>
-    </main>
+        </div>
+    </div>
     <div id="packages">
         <div class="package">
             <div class="image">[An Image Goes Here]</div>
@@ -85,44 +81,21 @@
             <div class="text">[Regular Text Goes Here]</div>
         </div>
     </div>
-    <footer>
+    <div class="footer">
         <div>[Fancy Lion Image Goes Here]</div>
         <div id="mailing_list">[Join Mailing List Element]</div>
         <div id="social_media">[Social Media Icons]</div>
         <div class="footer_information"><span class="hotel_name">The Mansfield</span> 12 West 44TH Street New York, NY 10036</div>
         <div class="footer_information">Reservations&#183;800.255.5167&#183;212.277.8700</div>
-        <nav class="footer_information">
+        <div class="nav footer_information">
             <div>Site Map</div>
             <div>Privacy Policy</div>
             <div>Press Room</div>
             <div>Career</div>
             <div>Gift Cards</div>
             <div>Contact Us</div>
-        </nav>
+        </div>
         <div class="footer_information">[Part of the Denihan Collection]</div>
-    </footer>
-    <div class="bookingengine">
-        <div class="section">
-            <input type="text" placeholder="Arrival Date" class="date" /><span><img src="img/bookingengine/cal.png" alt="Calendar Icon" /></span>
-            <input type="text" placeholder="Departure Date" class="date" /><span><img src="img/bookingengine/cal.png" alt="Calendar Icon" /></span>
-        </div>
-        <div class="section">
-            <input type="text" class="number" /><span>Adults</span>
-            <input type="text" class="number" /><span>Children</span>
-            <span><a href="#">Additional Options</a></span>
-            <div class="more_options">
-                <span><input type="text" placeholder="Promotional Code" class="option" /></span>
-                <span><input type="text" placeholder="Rate Type" class="option" /></span>
-                <span><input type="text" placeholder="Group Code" class="option" /></span>
-            </div>
-        </div>
-        <div class="section">
-            Reserve
-        </div>
-        <div class="section">
-            <span><a href="#">Best Rate Guaranteed</a></span>
-            <span class="closer"><a href="#">X</a></span>
-        </div>
     </div>
     
     <script src="js/jquery-1.7.js"></script>

@@ -35,5 +35,5 @@ footer { color: #877A57; padding: 5px; z-index: 30; }
 footer div#mailing_list, footer div#social_media { display: inline-block; width: 49%; }
 footer div#social_media { text-align: right; }
 footer .footer_information { font-size: 12px; padding: 3px 0px; text-align: center; text-transform: uppercase; }
-footer nav.footer_information div { display: inline-block; }
+footer nav.footer_information div { display: inline-block; padding: 0px 8px; }
 footer .footer_information span.hotel_name { padding-right: 10px; }
