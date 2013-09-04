@@ -25,14 +25,16 @@ main#page_content article header h1 { margin: 0px; text-transform: uppercase; }
 
 /* DIV Section for packages */
 div#packages { margin: 0px auto; padding: 5px; width: 980px; }
-div#packages div.package { display: inline-block; width: 24%; }
+div#packages div.package { display: inline-block; padding: 0px 5px 0px 0px; width: 24%; }
 div#packages div.package div.image { border: 2px solid #9B9062; }
 div#packages div.package div.header { color: #645131; font-weight: bold; }
 div#packages div.package div.text { }
 
 /* Footer Specifics */
 footer { color: #877A57; padding: 5px; z-index: 30; }
-footer div#mailing_list, footer div#social_media { display: inline-block; width: 49%; }
+footer div#mailing_list, footer div#social_media { display: inline-block; text-transform: uppercase; width: 49%; }
+footer div#mailing_list a:link { background-color: #C4B88E; color: #524523; padding: 10px; text-decoration: none; }
+footer div#mailing_list a:visited { color: #524523; }
 footer div#social_media { text-align: right; }
 footer .footer_information { font-size: 12px; padding: 3px 0px; text-align: center; text-transform: uppercase; }
 footer nav.footer_information div { display: inline-block; padding: 0px 8px; }

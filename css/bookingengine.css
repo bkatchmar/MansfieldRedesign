@@ -1,18 +1,28 @@
 ﻿/* Booking Engine Div */
-div.bookingengine { background-color: #000; display: inline-block; width: 330px; }
+div.bookingengine { background-color: #000; display: inline-block; left: 450px; opacity: 0; position: absolute; text-align: left; top: 0px; visibility: hidden; width: 330px; z-index: 15; }
 div.bookingengine input[type="text"] { background-color: #000; border: 1px solid #40422C; color: #ABA583; padding: 2px 5px; }
 div.bookingengine input[type="text"].date { width: 105px; }
 div.bookingengine input[type="text"].number { width: 10px; }
 div.bookingengine div.section { border-bottom: 2px dotted #5B5C4E; margin: 0px auto; padding: 5px 0px; width: 90%; }
+div.bookingengine div.section:last-child { border-bottom: none; }
 div.bookingengine div.section span { color: #9A9B96; display: inline-block; height: 22px; font-size: 12px; padding: 0px 5px; vertical-align: middle; }
 div.bookingengine div.section span a:link { color: #ABA583; }
 div.bookingengine div.section span a:visited { color: #ABA583; }
 div.bookingengine div.section span.closer { float: right; }
 div.bookingengine div.section span.closer a:link { color: #807853; font-weight: bold; text-decoration: none; }
 div.bookingengine div.section span.closer a:visited { color: #807853; font-weight: bold; text-decoration: none; }
-div.bookingengine div.section div.more_options { padding: 5px 0px 0px 0px; visibility: visible; }
-div.bookingengine div.section div.more_options span { padding: 3px 0px; }
-div.bookingengine div.section div.more_options input[type="text"].option { width: 125px; }
+div.bookingengine div.section div.more_options { height: 0px; padding: 5px 0px 0px 0px; overflow: hidden; }
+div.bookingengine div.section div.more_options div { border: 1px solid #40422C; display: inline-block; height: 25px; margin: 0px 5px 5px 0px; overflow: hidden; padding: 0px; width: 125px; vertical-align: top; }
+div.bookingengine div.section div.more_options div select { background: url(../img/bookingengine/select-arrow.png) no-repeat 110px #000; border: none; color: #ABA583; height: 20px; margin: 0px; padding: 0px; width: 150px; }
+div.bookingengine div.section div.more_options input[type="text"].option { border: none; height: 20px; width: 125px; }
+div.bookingengine div.section.reserve_button { text-align: center; }
+div.bookingengine div.section.reserve_button a:link { background-color: #B6AB7D; border: 1px solid #FFF; color: #40370E; display: inline-block; text-decoration: none; width: 120px; }
+div.bookingengine div.section.reserve_button a:visited { color: #40370E; }
+
+/* jQuery UI DatePicker Overrides */
+div.ui-datepicker { border: 1px solid #ABA583; font-size:10px; }
+div.bookingengine div.section img.ui-datepicker-trigger { cursor: pointer; padding: 0px 5px; }
+div.ui-datepicker td.ui-datepicker-today a.ui-state-default.ui-state-highlight { background: #40422C 50% 50% repeat-x; border: 1px solid #40422C; color: #FFF; font-weight: bold; }
 
 /* Placeholder Text */
 ::-webkit-input-placeholder { color: #ABA583; }

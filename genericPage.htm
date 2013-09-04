@@ -5,8 +5,12 @@
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <![endif]-->
+    <link rel="Stylesheet" href="css/jquery-ui-1.10.3.custom.min.css" />
     <link rel="Stylesheet" href="css/mansfield.css" />
     <link rel="Stylesheet" href="css/bookingengine.css" />
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="css/mansfield.ie.css" />
+    <![endif]-->
     <meta charset="UTF-8" />
 </head>
 <body>
@@ -18,7 +22,7 @@
         </div>
         <nav>
             <a href="#">Our Hotel</a>
-            <a href="#">Reservations</a>
+            <a href="JavaScript:void(0);" id="reservations_link">Reservations</a>
             <a href="#">Accommodations</a>
             <a href="#">Gallery</a>
             <a href="#">Packages</a>
@@ -87,8 +91,12 @@
     </div>
     <footer>
         <div>[Fancy Lion Image Goes Here]</div>
-        <div id="mailing_list">[Join Mailing List Element]</div>
-        <div id="social_media">[Social Media Icons]</div>
+        <div id="mailing_list">
+            <img src="img/wax_seal.png" alt="Wax Seal" />
+            <input type="text" placeholder="Join Mailing List" />
+            <a href="#">JOIN</a>
+        </div>
+        <div id="social_media">Join The Coversation</div>
         <div class="footer_information"><span class="hotel_name">The Mansfield</span> 12 West 44TH Street New York, NY 10036</div>
         <div class="footer_information">Reservations&#183;800.255.5167&#183;212.277.8700</div>
         <nav class="footer_information">
@@ -101,31 +109,41 @@
         </nav>
         <div class="footer_information">[Part of the Denihan Collection]</div>
     </footer>
+
+    <!-- Booking Form -->
     <div class="bookingengine">
         <div class="section">
-            <input type="text" placeholder="Arrival Date" class="date" /><span><img src="img/bookingengine/cal.png" alt="Calendar Icon" /></span>
-            <input type="text" placeholder="Departure Date" class="date" /><span><img src="img/bookingengine/cal.png" alt="Calendar Icon" /></span>
+            <input type="text" placeholder="Arrival Date" class="date" />
+            <input type="text" placeholder="Departure Date" class="date" />
         </div>
         <div class="section">
-            <input type="text" class="number" /><span>Adults</span>
-            <input type="text" class="number" /><span>Children</span>
-            <span><a href="#">Additional Options</a></span>
-            <div class="more_options">
-                <span><input type="text" placeholder="Promotional Code" class="option" /></span>
-                <span><input type="text" placeholder="Rate Type" class="option" /></span>
-                <span><input type="text" placeholder="Group Code" class="option" /></span>
+            <input type="text" class="number" value="1" /><span>Adults</span>
+            <input type="text" class="number" value="0" /><span>Children</span>
+            <span><a id="additional_options" href="JavaScript:void(0);">Additional Options</a></span>
+            <div class="more_options additional_options">
+                <div><input type="text" placeholder="Promotional Code" class="option" /></div>
+                <div>
+                    <select>
+                      <option value="1">Rate Type</option>
+                      <option value="2">Some Rate</option>
+                   </select>
+                </div>
+                <div><input type="text" placeholder="Group Code" class="option" /></div>
             </div>
         </div>
-        <div class="section">
-            Reserve
+        <div class="section reserve_button">
+            <a href="#">Reserve</a>
         </div>
         <div class="section">
             <span><a href="#">Best Rate Guaranteed</a></span>
-            <span class="closer"><a href="#">X</a></span>
+            <span class="closer"><a href="JavaScript:void(0);">X</a></span>
         </div>
     </div>
-    
-    <script src="js/jquery-1.7.js"></script>
+    <!-- End Booking Form -->
+
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/denihan.mansfield.booking.js"></script>
     <script src="js/denihan.mansfield.page.load.js"></script>
 </body>
 </html>
