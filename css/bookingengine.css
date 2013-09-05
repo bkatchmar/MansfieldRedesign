@@ -20,7 +20,7 @@ div.bookingengine div.section.reserve_button a:link { background-color: #B6AB7D;
 div.bookingengine div.section.reserve_button a:visited { color: #40370E; }
 
 /* Best Rate Promise */
-div.bookingengine div.best_rate_promise { background-color: #E2D5B2; border-radius: 10px; color: #493F1C; left: 40px; opacity: 1; position: absolute; width: 550px; -webkit-border-radius: 10px; -moz-border-radius: 10px; }
+div.bookingengine div.best_rate_promise { background-color: #E2D5B2; border-radius: 10px; color: #493F1C; left: 40px; opacity: 0; position: absolute; width: 550px; -webkit-border-radius: 10px; -moz-border-radius: 10px; }
 div.bookingengine div.best_rate_promise:after { border-color: #E2D5B2 transparent; border-style: solid; border-width: 0px 15px 15px; content: ""; display: block; left: 25px; position: absolute; top: -15px; width: 0; }
 div.bookingengine div.best_rate_promise div.rate_section { border-right: 1px solid #493F1C; display: inline-block; height: 110px; vertical-align: top; width: 49%; }
 div.bookingengine div.best_rate_promise div.rate_section.last { border-right: none; }

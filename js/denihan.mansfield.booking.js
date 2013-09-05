@@ -20,7 +20,10 @@
             });
 
             $el.find("div.section a#additional_options").denihanMoreOptions();
-
+            $el.find("a#best_rate_bubble").denihanToggle({ 
+                additionalTrigger : function(on,off,target,$trigger) { $(settings.closer).click(function() { off($trigger,target); }); }
+            });
+            
             $(settings.triggerSelect).click(function() {
                 settings.onMode($el);
             });
