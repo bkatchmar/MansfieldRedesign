@@ -4,15 +4,18 @@ header#primary, main#page_content, footer { width: 100%; }
 header#primary div#header_primary, main#page_content, footer { margin: 0px auto; width: 980px; }
 
 /* Header Specifics */
-header#primary { background-color: #333; color: #FCFCFC; text-align: center; z-index: 30; }
+header#primary { background-color: #333; color: #FCFCFC; padding: 10px 0px 0px 0px; text-align: center; z-index: 30; }
 header#primary div#header_primary { color: #A5A370; }
-header#primary div#header_primary div { display: inline-block; margin: 0px auto; width: 33%; }
-header#primary nav { margin: 0px auto; padding: 10px 0px 0px 0px; width: 980px; }
-header#primary nav a:link { color: #FCFCFC; padding: 0px 20px; text-decoration: none; }
-header#primary nav a:visited { color: #FCFCFC; padding: 0px 20px; text-decoration: none; }
+header#primary div#header_primary div { display: inline-block; margin: 0px auto; width: 33%; vertical-align: middle; }
+header#primary nav { font-size: 14px; margin: 0px auto; padding: 10px 0px 0px 0px; text-transform: uppercase; width: 980px; }
+header#primary nav a:link { color: #FCFCFC; padding: 0px 15px; text-decoration: none; }
+header#primary nav a:visited { color: #FCFCFC; padding: 0px 15px; text-decoration: none; }
+header#primary nav a:first-child { padding: 0px 15px 0px 0px; }
+header#primary nav a:last-child { padding: 0px 0px 0px 15px; }
 
 /* Main Specifics */
 main#page_content { color: #614D2C; display: block; padding: 5px; z-index: 10; }
+main#page_content div#hero_image_gallery img { width: 100%; }
 main#page_content nav, main#page_content article { display: inline-block; vertical-align: top; }
 main#page_content nav { border-bottom: 3px solid #B3A870; border-top: 3px solid #B3A870; margin: 0px 25px 0px 0px; width: 20%; }
 main#page_content nav div { border-bottom: 1px solid #B1AA66; padding: 4px 0px; }
@@ -32,10 +35,13 @@ div#packages div.package div.text { }
 
 /* Footer Specifics */
 footer { color: #877A57; padding: 5px; z-index: 30; }
+footer div.divider { background: url(../img/footer_divider.png) no-repeat center top #E1D6B1; height: 75px; }
 footer div#mailing_list, footer div#social_media { display: inline-block; text-transform: uppercase; width: 49%; }
-footer div#mailing_list a:link { background-color: #C4B88E; color: #524523; padding: 10px; text-decoration: none; }
-footer div#mailing_list a:visited { color: #524523; }
+footer div#mailing_list table input[type="text"] { padding: 5px; }
+footer div#mailing_list table a img { border: none; }
 footer div#social_media { text-align: right; }
+footer div#social_media table { height: 70px; font-weight: bold; width: 100%; }
+footer div#social_media table td.icons { width:70px; }
 footer .footer_information { font-size: 12px; padding: 3px 0px; text-align: center; text-transform: uppercase; }
 footer nav.footer_information div { display: inline-block; padding: 0px 8px; }
 footer .footer_information span.hotel_name { padding-right: 10px; }
