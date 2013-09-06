@@ -1,6 +1,6 @@
 ﻿/* Highest Level Elements */
 body { background-color: #E1D6B1; color: #333; font-family: Arial; margin: auto; }
-header#primary, main#page_content, footer { width: 100%; }
+header#primary, main#page_content, footer { position: relative; width: 100%; }
 header#primary div#header_primary, main#page_content, footer { margin: 0px auto; width: 980px; }
 
 /* Header Specifics */
@@ -25,6 +25,10 @@ main#page_content nav div a.selected:link { color: #000; }
 main#page_content nav div a.selected:visited { color: #000; }
 main#page_content article { color: #000; width: 75%; }
 main#page_content article header h1 { margin: 0px; text-transform: uppercase; }
+
+/* Main Home Page Override */
+main#page_content.home { padding: 0px; width: 100%; }
+main#page_content.home div.gallery_divider { background: url(../img/gallery_divider.png) no-repeat center top #E1D6B1; height: 25px; position: relative; top: -15px; z-index: 10; }
 
 /* DIV Section for packages */
 div#packages { margin: 0px auto; padding: 5px; width: 980px; }

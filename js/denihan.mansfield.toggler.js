@@ -12,6 +12,11 @@
         function initialize($el) {
             $el.attr("data-denihan-mode", settings["defaultMode"]);
 
+            //For older browsers, I notice setting Opacity:0 doesn't really cut it. But setting the animation actually will do the trick
+            if(settings["defaultMode"] === "off") {
+                settings.offMode($el,settings.target);
+            }
+
             settings.additionalTrigger(settings.onMode,settings.offMode,settings.target,$el);
 
             $el.click(function () {
