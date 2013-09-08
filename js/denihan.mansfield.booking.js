@@ -4,7 +4,7 @@
         var settings = $.extend({
             triggerSelect: "header#primary nav a#reservations_link",
             closer: "div.section span.closer a",
-            onMode: function($el) { $el.css({visibility:"visible"}).animate({top:"118px",opacity:1},{duration: 600}); },
+            onMode: function($el) { $el.css({visibility:"visible"}).animate({top:"26px",opacity:1},{duration: 600}); },
             offMode: function($el) { $el.animate({top:"0px",opacity:0},{duration: 600,complete:function() { $(this).css({visibility:"hidden"}); }}) }
         }, options);
 

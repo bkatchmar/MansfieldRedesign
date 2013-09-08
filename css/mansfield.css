@@ -7,7 +7,7 @@ header#primary div#header_primary, main#page_content, footer { margin: 0px auto;
 header#primary { background-color: #333; color: #FCFCFC; padding: 10px 0px 0px 0px; text-align: center; z-index: 30; }
 header#primary div#header_primary { color: #A5A370; }
 header#primary div#header_primary div { display: inline-block; margin: 0px auto; width: 33%; vertical-align: middle; }
-header#primary nav { font-size: 14px; margin: 0px auto; padding: 10px 0px 0px 0px; text-transform: uppercase; width: 980px; }
+header#primary nav { font-size: 14px; margin: 0px auto; padding: 10px 0px 0px 0px; position: relative; text-transform: uppercase; width: 980px; }
 header#primary nav a:link { color: #FCFCFC; padding: 0px 15px; text-decoration: none; }
 header#primary nav a:visited { color: #FCFCFC; padding: 0px 15px; text-decoration: none; }
 header#primary nav a:first-child { padding: 0px 15px 0px 0px; }
