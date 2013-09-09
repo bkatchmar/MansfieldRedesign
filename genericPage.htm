@@ -26,22 +26,22 @@
             <!-- Booking Form -->
             <div class="bookingengine">
                 <div class="section">
-                    <input type="text" placeholder="Arrival Date" class="date" />
-                    <input type="text" placeholder="Departure Date" class="date" />
+                    <input type="text" placeholder="Arrival Date" class="date arrive" />
+                    <input type="text" placeholder="Departure Date" class="date depart" />
                 </div>
                 <div class="section">
-                    <input type="text" class="number" value="1" /><span>Adults</span>
-                    <input type="text" class="number" value="0" /><span>Children</span>
+                    <input type="text" class="number adult" value="1" /><span>Adults</span>
+                    <input type="text" class="number children" value="0" /><span>Children</span>
                     <span><a id="additional_options" href="JavaScript:void(0);">Additional Options</a></span>
                     <div class="more_options additional_options">
-                        <div><input type="text" placeholder="Promotional Code" class="option" /></div>
+                        <div><input type="text" placeholder="Promotional Code" class="option promo" /></div>
                         <div>
-                            <select>
+                            <select class="rate_type">
                                 <option value="1">Rate Type</option>
                                 <option value="2">Some Rate</option>
                             </select>
                         </div>
-                        <div><input type="text" placeholder="Group Code" class="option" /></div>
+                        <div><input type="text" placeholder="Group Code" class="option group" /></div>
                     </div>
                 </div>
                 <div class="section reserve_button">

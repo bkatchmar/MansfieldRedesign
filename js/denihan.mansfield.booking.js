@@ -4,6 +4,7 @@
         var settings = $.extend({
             triggerSelect: "header#primary nav a#reservations_link",
             closer: "div.section span.closer a",
+            reserveButton: "div.section.reserve_button a",
             onMode: function($el) { $el.css({visibility:"visible"}).animate({top:"26px",opacity:1},{duration: 600}); },
             offMode: function($el) { $el.animate({top:"0px",opacity:0},{duration: 600,complete:function() { $(this).css({visibility:"hidden"}); }}) }
         }, options);
@@ -31,6 +32,8 @@
             $(settings.closer).click(function() {
                 settings.offMode($el);
             });
+
+            $(settings.reserveButton).denihanProcessBookRequest({ process: function(bookingData) { window.open(bookingData.url); } });
         }
 
         return this.each(function () {
@@ -63,6 +66,50 @@
                     $(this).attr("data-denihan-mode", "on");
                 }
             });
+        }
+
+        return this.each(function () {
+            var $this = $(this);
+            initialize($this);
+        });
+    };
+})(jQuery);
+
+; (function ($) {
+    $.fn.denihanProcessBookRequest = function (options) {
+        // Create some defaults, extending them with any options that were provided
+        var settings = $.extend({
+            engineSelector: ".bookingengine",
+            arrivalSelector: "input.date.arrive",
+            departSelector: "input.date.depart",
+            adultsSelector: "input.number.adult",
+            childrenSelector: "input.number.children",
+            promoCodeSelector: "input.option.promo",
+            rateTypeSelector: "select.rate_type",
+            groupCodeSelector: "input.option.group",
+            hotel: "55747",
+            chain: "5158",
+            process: function(bookingData) { }
+        }, options);
+
+        function initialize($el) {
+            $el.click(function() { settings.process(buildUrl()); });
+        }
+
+        function buildUrl() {
+            var arrival = $(settings.engineSelector + " " + settings.arrivalSelector).datepicker({ dateFormat: "mm/dd/yyyy" }).val();
+            var depart = $(settings.engineSelector + " " + settings.departSelector).datepicker({ dateFormat: "mm/dd/yyyy" }).val();
+            var adults = $(settings.engineSelector + " " + settings.adultsSelector).val();
+            var children = $(settings.engineSelector + " " + settings.childrenSelector).val();
+            var promo = $(settings.engineSelector + " " + settings.promoCodeSelector).val();
+            var rate = $(settings.engineSelector + " " + settings.rateTypeSelector).val();
+            var group = $(settings.engineSelector + " " + settings.groupCodeSelector).val();
+
+            var returnUrl = "https://gc.synxis.com/rez.aspx?Hotel=" + settings.hotel + "&Chain=" + settings.chain + "&shell=Flex&template=Flex&start=availresults&arrive=" + arrival + "&depart=" + depart + "&Adult=" + adults + "&Child=" + children + "&promo=" + promo + "&group=" + group + "&filter=" + rate;
+            
+            return {
+                url: returnUrl
+            }
         }
 
         return this.each(function () {
