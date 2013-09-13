@@ -5,8 +5,8 @@
             triggerSelect: "header#primary nav a#reservations_link",
             closer: "div.section span.closer a",
             reserveButton: "div.section.reserve_button a",
-            onMode: function($el) { $el.css({visibility:"visible"}).animate({top:"26px",opacity:1},{duration: 600}); },
-            offMode: function($el) { $el.animate({top:"0px",opacity:0},{duration: 600,complete:function() { $(this).css({visibility:"hidden"}); }}) }
+            onMode: function($el) { $el.css({visibility:"visible"}).animate({top:"+=30px",opacity:1},{duration: 600}); },
+            offMode: function($el) { $el.animate({top:"-=30px",opacity:0},{duration: 600,complete:function() { $(this).css({visibility:"hidden"}); }}) }
         }, options);
 
         function initialize($el) {

@@ -1,30 +1,32 @@
 ﻿/* Highest Level Elements */
 body { background-color: #E1D6B1; color: #333; font-family: Arial; margin: auto; }
 header#primary, main#page_content, footer { position: relative; width: 100%; }
-header#primary div#header_primary, main#page_content, footer { margin: 0px auto; width: 980px; }
+header#primary div#header_primary, main#page_content, footer { margin: 0px auto; } /* width: 980px; */
 
 /* Header Specifics */
-header#primary { background-color: #333; color: #FCFCFC; padding: 10px 0px 0px 0px; text-align: center; z-index: 30; }
-header#primary div#header_primary { color: #A5A370; }
+header#primary { background-color: #000; color: #FCFCFC; height: 151px; padding: 0px 0px 0px 0px; text-align: center; z-index: 20; }
+header#primary div.background { background: url('../img/core/header-leather-bg.png') no-repeat center; height: 172px; left: 0px; position: absolute; top: 0px; width: 100%; z-index: 20; }
+header#primary div#header_primary { color: #A5A370; font-family: "Droid Sans W01 Regular"; font-size: 12px; font-weight: bold; padding: 15px 0px 0px 0px; position: relative; width: 980px; z-index: 20; }
 header#primary div#header_primary div { display: inline-block; margin: 0px auto; width: 33%; vertical-align: middle; }
-header#primary nav { font-size: 14px; margin: 0px auto; padding: 10px 0px 0px 0px; position: relative; text-transform: uppercase; width: 980px; }
-header#primary nav a:link { color: #FCFCFC; padding: 0px 15px; text-decoration: none; }
-header#primary nav a:visited { color: #FCFCFC; padding: 0px 15px; text-decoration: none; }
-header#primary nav a:first-child { padding: 0px 15px 0px 0px; }
-header#primary nav a:last-child { padding: 0px 0px 0px 15px; }
+header#primary nav { font-family: "Futura D W01_SC SC Demi"; font-size: 16px; margin: 0px auto; padding: 30px 0px 0px 0px; position: relative; text-transform: uppercase; width: 980px; z-index: 20; }
+header#primary nav a:link { color: #FCFCFC; padding: 0px 10px; text-decoration: none; }
+header#primary nav a:visited { color: #FCFCFC; padding: 0px 10px; text-decoration: none; }
+header#primary nav a:first-child { padding: 0px 10px 0px 0px; }
+header#primary nav a:last-child { padding: 0px 0px 0px 10px; }
 
 /* Main Specifics */
-main#page_content { color: #614D2C; display: block; padding: 5px; z-index: 10; }
+main#page_content { background-color: #E1D6B1; color: #614D2C; display: block; padding: 25px 5px 5px; position: relative; width: 980px; z-index: 10; }
 main#page_content div#hero_image_gallery img { width: 100%; }
 main#page_content nav, main#page_content article { display: inline-block; vertical-align: top; }
-main#page_content nav { border-bottom: 3px solid #B3A870; border-top: 3px solid #B3A870; margin: 0px 25px 0px 0px; width: 20%; }
-main#page_content nav div { border-bottom: 1px solid #B1AA66; padding: 4px 0px; }
+main#page_content nav { border-bottom: 3px solid #B3A870; border-top: 3px solid #B3A870; font-family: "Futura D W01_SC SC Demi"; font-size: 14px; font-weight: bold; margin: 0px 25px 0px 0px; text-transform: uppercase; width: 20%; }
+main#page_content nav div { border-bottom: 1px solid #B1AA66; padding: 5px 0px; }
 main#page_content nav div a:link { color: #614D2C; display: block; text-decoration: none; }
 main#page_content nav div a:visited { color: #614D2C; display: block; text-decoration: none; }
 main#page_content nav div a.selected:link { color: #000; }
 main#page_content nav div a.selected:visited { color: #000; }
-main#page_content article { color: #000; width: 75%; }
-main#page_content article header h1 { margin: 0px; text-transform: uppercase; }
+main#page_content article { color: #000; font-family: "Droid Sans W01 Regular"; width: 75%; }
+main#page_content article header h1 { margin: 0px; font-family: "Futura D W01_SC SC Demi"; font-size: 20px; text-transform: uppercase; }
+main#page_content article p { font-size: 12px; }
 
 /* Main Home Page Override */
 main#page_content.home { padding: 0px; width: 100%; }
@@ -32,18 +34,18 @@ main#page_content.home div.gallery_divider { background: url(../img/gallery_divi
 
 /* DIV Section for packages */
 div#packages { margin: 0px auto; padding: 5px; width: 980px; }
-div#packages div.package { display: inline-block; padding: 0px 5px 0px 0px; width: 24%; }
+div#packages div.package { display: inline-block; padding: 0px 5px 0px 0px; text-transform: uppercase; width: 24%; }
 div#packages div.package div.image { border: 2px solid #9B9062; }
-div#packages div.package div.header { color: #645131; font-weight: bold; }
-div#packages div.package div.text { }
+div#packages div.package div.header { color: #645131; font-family: "Futura D W01_SC SC Demi"; font-weight: bold; }
+div#packages div.package div.text { font-family: "Helvetica World W01"; font-size: 12px; }
 
 /* Footer Specifics */
-footer { color: #877A57; padding: 5px; z-index: 30; }
+footer { color: #877A57; padding: 5px; width: 980px; z-index: 20; }
 footer div.divider { background: url(../img/footer_divider.png) no-repeat center top #E1D6B1; height: 75px; }
 footer div#mailing_list, footer div#social_media { display: inline-block; text-transform: uppercase; width: 49%; }
 footer div#mailing_list table input[type="text"] { padding: 5px; }
 footer div#mailing_list table a img { border: none; }
-footer div#social_media { text-align: right; }
+footer div#social_media { font-family: "Futura D W01_SC SC Demi"; text-align: right; }
 footer div#social_media table { height: 70px; font-weight: bold; width: 100%; }
 footer div#social_media table td.icons { width:70px; }
 footer .footer_information { font-size: 12px; padding: 3px 0px; text-align: center; text-transform: uppercase; }
