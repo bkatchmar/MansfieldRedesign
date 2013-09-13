@@ -1,7 +1,7 @@
 ﻿/* Highest Level Elements */
 body { background-color: #E1D6B1; color: #333; font-family: Arial; margin: auto; }
 header#primary, main#page_content, footer { position: relative; width: 100%; }
-header#primary div#header_primary, main#page_content, footer { margin: 0px auto; } /* width: 980px; */
+header#primary div#header_primary, main#page_content, footer { margin: 0px auto; }
 
 /* Header Specifics */
 header#primary { background-color: #000; border-bottom: 3px solid #A79567; color: #FCFCFC; height: 150px; padding: 0px 0px 0px 0px; text-align: center; z-index: 20; }
@@ -28,6 +28,7 @@ main#page_content nav div a.selected:visited { color: #000; }
 main#page_content article { color: #000; font-family: "Droid Sans W01 Regular"; width: 75%; }
 main#page_content article header h1 { margin: 0px; font-family: "Futura D W01_SC SC Demi"; font-size: 20px; text-transform: uppercase; }
 main#page_content article p { font-size: 12px; }
+main#page_content article ul li { font-size: 12px; }
 
 /* Main Home Page Override */
 main#page_content.home { padding: 0px; width: 100%; }
