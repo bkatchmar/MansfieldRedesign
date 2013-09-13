@@ -4,7 +4,7 @@ header#primary, main#page_content, footer { position: relative; width: 100%; }
 header#primary div#header_primary, main#page_content, footer { margin: 0px auto; } /* width: 980px; */
 
 /* Header Specifics */
-header#primary { background-color: #000; color: #FCFCFC; height: 151px; padding: 0px 0px 0px 0px; text-align: center; z-index: 20; }
+header#primary { background-color: #000; border-bottom: 3px solid #A79567; color: #FCFCFC; height: 150px; padding: 0px 0px 0px 0px; text-align: center; z-index: 20; }
 header#primary div.background { background: url('../img/core/header-leather-bg.png') no-repeat center; height: 172px; left: 0px; position: absolute; top: 0px; width: 100%; z-index: 20; }
 header#primary div#header_primary { color: #A5A370; font-family: "Droid Sans W01 Regular"; font-size: 12px; font-weight: bold; padding: 15px 0px 0px 0px; position: relative; width: 980px; z-index: 20; }
 header#primary div#header_primary div { display: inline-block; margin: 0px auto; width: 33%; vertical-align: middle; }
@@ -13,6 +13,7 @@ header#primary nav a:link { color: #FCFCFC; padding: 0px 10px; text-decoration: 
 header#primary nav a:visited { color: #FCFCFC; padding: 0px 10px; text-decoration: none; }
 header#primary nav a:first-child { padding: 0px 10px 0px 0px; }
 header#primary nav a:last-child { padding: 0px 0px 0px 10px; }
+header#primary div.be { height: 172px; left: 0px; margin: 0px auto; position: relative; top: 0px; width: 980px; z-index: 15; }
 
 /* Main Specifics */
 main#page_content { background-color: #E1D6B1; color: #614D2C; display: block; padding: 25px 5px 5px; position: relative; width: 980px; z-index: 10; }
@@ -30,12 +31,12 @@ main#page_content article p { font-size: 12px; }
 
 /* Main Home Page Override */
 main#page_content.home { padding: 0px; width: 100%; }
-main#page_content.home div.gallery_divider { background: url(../img/gallery_divider.png) no-repeat center top #E1D6B1; height: 25px; position: relative; top: -15px; z-index: 10; }
+main#page_content.home div.gallery_divider { background: url(../img/gallery_divider.png) no-repeat center top #E1D6B1; height: 25px; position: relative; top: -15px; z-index: 1; }
 
 /* DIV Section for packages */
 div#packages { margin: 0px auto; padding: 5px; width: 980px; }
-div#packages div.package { display: inline-block; padding: 0px 5px 0px 0px; text-transform: uppercase; width: 24%; }
-div#packages div.package div.image { border: 2px solid #9B9062; }
+div#packages div.package { display: inline-block; padding: 0px 5px 0px 0px; text-transform: uppercase; vertical-align: top; width: 212px; }
+div#packages div.package div.image { border: 2px solid #9B9062; height: 176px; }
 div#packages div.package div.header { color: #645131; font-family: "Futura D W01_SC SC Demi"; font-weight: bold; }
 div#packages div.package div.text { font-family: "Helvetica World W01"; font-size: 12px; }
 

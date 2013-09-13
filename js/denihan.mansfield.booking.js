@@ -26,11 +26,17 @@
             });
             
             $(settings.triggerSelect).click(function() {
-                settings.onMode($el);
+                var mode = $(this).attr("data-denihan-mode");
+                
+                if(mode === "off") {
+                    settings.onMode($el);
+                    $(this).attr("data-denihan-mode", "on");
+                }
             });
 
             $(settings.closer).click(function() {
                 settings.offMode($el);
+                $(settings.triggerSelect).attr("data-denihan-mode", "off");
             });
 
             $(settings.reserveButton).denihanProcessBookRequest({ process: function(bookingData) { window.open(bookingData.url); } });
