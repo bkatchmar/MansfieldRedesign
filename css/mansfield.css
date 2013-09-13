@@ -19,7 +19,7 @@ header#primary div.be { height: 172px; left: 0px; margin: 0px auto; position: re
 main#page_content { background-color: #E1D6B1; color: #614D2C; display: block; padding: 25px 5px 5px; position: relative; width: 980px; z-index: 10; }
 main#page_content div#hero_image_gallery img { width: 100%; }
 main#page_content nav, main#page_content article { display: inline-block; vertical-align: top; }
-main#page_content nav { border-bottom: 3px solid #B3A870; border-top: 3px solid #B3A870; font-family: "Futura D W01_SC SC Demi"; font-size: 14px; font-weight: bold; margin: 0px 25px 0px 0px; text-transform: uppercase; width: 20%; }
+main#page_content nav { border-bottom: 3px solid #B3A870; border-top: 3px solid #B3A870; font-family: "Futura D W01_SC SC Demi"; font-size: 14px; margin: 0px 25px 0px 0px; text-transform: uppercase; width: 20%; }
 main#page_content nav div { border-bottom: 1px solid #B1AA66; padding: 5px 0px; }
 main#page_content nav div a:link { color: #614D2C; display: block; text-decoration: none; }
 main#page_content nav div a:visited { color: #614D2C; display: block; text-decoration: none; }
@@ -35,9 +35,10 @@ main#page_content.home div.gallery_divider { background: url(../img/gallery_divi
 
 /* DIV Section for packages */
 div#packages { margin: 0px auto; padding: 5px; width: 980px; }
-div#packages div.package { display: inline-block; padding: 0px 5px 0px 0px; text-transform: uppercase; vertical-align: top; width: 212px; }
-div#packages div.package div.image { border: 2px solid #9B9062; height: 176px; }
-div#packages div.package div.header { color: #645131; font-family: "Futura D W01_SC SC Demi"; font-weight: bold; }
+div#packages div.package { display: inline-block; padding: 0px 5px 0px 0px; text-transform: uppercase; vertical-align: top; width: 24%; }
+div#packages div.package div.image { border: 2px solid #9B9062; height: 196px; }
+div#packages div.package div.image img { width: 100%; }
+div#packages div.package div.header { color: #645131; font-family: "Futura D W01_SC SC Demi"; font-size: 14px; }
 div#packages div.package div.text { font-family: "Helvetica World W01"; font-size: 12px; }
 
 /* Footer Specifics */
