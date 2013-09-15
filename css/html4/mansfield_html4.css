@@ -35,7 +35,7 @@ div#packages div.package div.text { }
 
 /* Footer Specifics */
 div.footer { color: #877A57; padding: 5px; z-index: 30; }
-div.footer div.divider { background: url(../img/footer_divider.png) no-repeat center top #E1D6B1; height: 75px; }
+div.footer div.divider { background: url(../img/core/footer_divider.png) no-repeat center top #E1D6B1; height: 75px; }
 div.footer div#mailing_list, div.footer div#social_media { display: inline-block; text-transform: uppercase; width: 49%; }
 div.footer div#mailing_list table input[type="text"] { padding: 5px; }
 div.footer div#mailing_list table a img { border: none; }

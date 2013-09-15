@@ -32,7 +32,7 @@ main#page_content article ul li { font-size: 12px; }
 
 /* Main Home Page Override */
 main#page_content.home { padding: 0px; width: 100%; }
-main#page_content.home div.gallery_divider { background: url(../img/gallery_divider.png) no-repeat center top #E1D6B1; height: 25px; position: relative; top: -15px; z-index: 1; }
+main#page_content.home div.gallery_divider { background: url(../img/core/gallery_divider.png) no-repeat center top #E1D6B1; height: 25px; position: relative; top: -15px; z-index: 1; }
 
 /* DIV Section for packages */
 div#packages { margin: 0px auto; padding: 5px; width: 980px; }
@@ -44,7 +44,7 @@ div#packages div.package div.text { font-family: "Helvetica World W01"; font-siz
 
 /* Footer Specifics */
 footer { color: #877A57; padding: 5px; width: 980px; z-index: 20; }
-footer div.divider { background: url(../img/footer_divider.png) no-repeat center top #E1D6B1; height: 75px; }
+footer div.divider { background: url(../img/core/footer_divider.png) no-repeat center top #E1D6B1; height: 75px; }
 footer div#mailing_list, footer div#social_media { display: inline-block; text-transform: uppercase; width: 49%; }
 footer div#mailing_list table input[type="text"] { padding: 5px; }
 footer div#mailing_list table a img { border: none; }
