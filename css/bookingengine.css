@@ -4,6 +4,7 @@ header#primary div.bookingengine input[type="text"] { background-color: #000; bo
 header#primary div.bookingengine input[type="text"].date { width: 105px; }
 header#primary div.bookingengine input[type="text"].number { width: 10px; }
 header#primary div.bookingengine div.section { border-bottom: 2px dotted #5B5C4E; margin: 0px auto; padding: 5px 0px; width: 90%; }
+header#primary div.bookingengine div.section.last { border-bottom: none; }
 header#primary div.bookingengine div.section:last-child { border-bottom: none; }
 header#primary div.bookingengine div.section span { color: #9A9B96; display: inline-block; height: 22px; font-size: 12px; padding: 0px 5px; vertical-align: middle; }
 header#primary div.bookingengine div.section span a:link { color: #ABA583; padding: 0px; text-decoration: underline; text-transform: none; }

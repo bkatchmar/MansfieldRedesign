@@ -8,7 +8,7 @@ header#primary { background-color: #000; border-bottom: 3px solid #A79567; color
 header#primary div.background { background: url('../img/core/header-leather-bg.png') no-repeat center; height: 172px; left: 0px; position: absolute; top: 0px; width: 100%; z-index: 20; }
 header#primary div#header_primary { color: #A5A370; font-family: "Droid Sans W01 Regular"; font-size: 12px; font-weight: bold; padding: 15px 0px 0px 0px; position: relative; width: 980px; z-index: 20; }
 header#primary div#header_primary div { display: inline-block; margin: 0px auto; width: 33%; vertical-align: middle; }
-header#primary nav { font-family: "Futura D W01_SC SC Demi"; font-size: 16px; margin: 0px auto; padding: 30px 0px 0px 0px; position: relative; text-transform: uppercase; width: 980px; z-index: 20; }
+header#primary nav { font-family: "Futura D W01_SC SC Demi"; font-size: 16px; margin: 0px auto; padding: 10px 0px 0px 0px; position: relative; text-transform: uppercase; width: 980px; z-index: 20; }
 header#primary nav a:link { color: #FCFCFC; padding: 0px 10px; text-decoration: none; }
 header#primary nav a:visited { color: #FCFCFC; padding: 0px 10px; text-decoration: none; }
 header#primary nav a:first-child { padding: 0px 10px 0px 0px; }
