@@ -50,7 +50,7 @@ footer div#mailing_list table input[type="text"] { padding: 5px; }
 footer div#mailing_list table a img { border: none; }
 footer div#social_media { font-family: "Futura D W01_SC SC Demi"; text-align: right; }
 footer div#social_media table { height: 70px; font-weight: bold; width: 100%; }
-footer div#social_media table td.icons { width:70px; }
+footer div#social_media table td.icons { width: 75px; }
 footer .footer_information { font-size: 12px; padding: 3px 0px; text-align: center; text-transform: uppercase; }
 footer nav.footer_information div { display: inline-block; padding: 0px 8px; }
 footer .footer_information span.hotel_name { padding-right: 10px; }
