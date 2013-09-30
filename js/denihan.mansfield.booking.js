@@ -20,9 +20,22 @@
                 showOptions: { direction: "down" }
             });
 
+            // Arrive Date Picker sets depart
+            $el.find("div.section input[type='text'].date.arrive").change(function() { 
+                var arrival = $(this).datepicker("getDate");
+                var d = arrival.getDate();
+                var m = arrival.getMonth();
+                var y = arrival.getFullYear();
+                var departure = new Date(y, m, d+1);
+                $("div.section input[type='text'].date.depart").datepicker("setDate", departure);
+            });
+
             $el.find("div.section a#additional_options").denihanMoreOptions();
             $el.find("a#best_rate_bubble").denihanToggle({ 
-                additionalTrigger : function(on,off,target,$trigger) { $(settings.closer).click(function() { off($trigger,target); }); }
+                additionalTrigger : function(on,off,target,$trigger) { 
+                    $(settings.closer).click(function() { off($trigger,target); });
+                    $(target + " div.learn_more span.best_rate_close").click(function() { off($trigger,target); });
+                }
             });
             
             $(settings.triggerSelect).click(function() {

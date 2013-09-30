@@ -44,7 +44,7 @@ div#packages div.package { display: inline-block; padding: 0px 5px 0px 0px; text
 div#packages div.package div.image { border: 2px solid #9B9062; height: 196px; }
 div#packages div.package div.image img { width: 100%; }
 div#packages div.package div.header { color: #645131; font-family: "Futura D W01_SC SC Demi"; font-size: 14px; }
-div#packages div.package div.text { font-family: "Helvetica World W01"; font-size: 12px; }
+div#packages div.package div.text { font-family: "Helvetica World W01"; font-size: 12px; line-height: 1; padding: 2px 0px; }
 
 /* Footer Specifics */
 footer { color: #877A57; padding: 5px 15px; width: 980px; z-index: 20; }

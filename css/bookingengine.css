@@ -28,6 +28,7 @@ header#primary div.bookingengine div.best_rate_promise div.rate_section p, div.b
 header#primary div.bookingengine div.best_rate_promise div.rate_section ul { padding: 10px 0px 0px 25px; }
 header#primary div.bookingengine div.best_rate_promise div.learn_more { padding: 5px 0px 0px 0px; text-align: center; width: 100%; }
 header#primary div.bookingengine div.best_rate_promise div.learn_more img { border: 0; }
+header#primary div.bookingengine div.best_rate_promise div.learn_more span.best_rate_close { cursor: pointer; float: right; font-size: 12px; padding: 0px 10px 0px 0px; vertical-align: top; }
 
 /* jQuery UI DatePicker Overrides */
 div.ui-datepicker { border: 1px solid #ABA583; font-size:10px; z-index: 40 !important; }
