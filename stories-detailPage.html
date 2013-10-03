@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>The Mansfield Hotel Generic Page</title>
+    <title>The Mansfield Story Detail Page</title>
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <![endif]-->
@@ -16,11 +16,11 @@
     <![endif]-->
     <meta charset="UTF-8" />
 </head>
-<body class="home">
+<body>
     <header id="primary">
         <div class="background"></div>
         <div id="header_primary">
-            <div id="hotel_phones">800.255.5167 &#183; 212.227.8700</div>
+            <div id="hotel_phones">800.255.5167 &#183; 212.277.8700</div>
             <div id="hotel_name"><img src="img/core/mansfield-logo.png" alt="The Mansfield Hotel Logo" /></div>
             <div id="hotel_address">12 WEST 44TH STREET NYC 10036</div>
         </div>
@@ -37,22 +37,22 @@
             <!-- Booking Form -->
             <div class="bookingengine">
                 <div class="section">
-                    <input type="text" placeholder="Arrival Date" class="date" />
-                    <input type="text" placeholder="Departure Date" class="date" />
+                    <input type="text" placeholder="Arrival Date" class="date arrive" />
+                    <input type="text" placeholder="Departure Date" class="date depart" />
                 </div>
                 <div class="section">
-                    <input type="text" class="number" value="1" /><span>Adults</span>
-                    <input type="text" class="number" value="0" /><span>Children</span>
+                    <input type="text" class="number adult" value="1" /><span>Adults</span>
+                    <input type="text" class="number children" value="0" /><span>Children</span>
                     <span><a id="additional_options" href="JavaScript:void(0);">Additional Options</a></span>
                     <div class="more_options additional_options">
-                        <div><input type="text" placeholder="Promotional Code" class="option" /></div>
+                        <div><input type="text" placeholder="Promotional Code" class="option promo" /></div>
                         <div>
-                            <select>
-                              <option value="1">Rate Type</option>
-                              <option value="2">Some Rate</option>
-                           </select>
+                            <select class="rate_type">
+                                <option value="1">Rate Type</option>
+                                <option value="2">Some Rate</option>
+                            </select>
                         </div>
-                        <div><input type="text" placeholder="Group Code" class="option" /></div>
+                        <div><input type="text" placeholder="Group Code" class="option group" /></div>
                     </div>
                 </div>
                 <div class="section reserve_button">
@@ -84,46 +84,66 @@
             <!-- End Booking Form -->
         </div>
     </header>
-    <main id="page_content" class="home">
+    <main id="page_content">
         <div id="hero_image_gallery" class="flexslider">
             <ul class="slides">
                 <li>
-                    <img src="img/gallery/hero-home.jpg" alt="Gallery" />
-                    <div class="flex-caption">
-                        <p class="maincap">A MAGICAL OASIS IN THE HEART OF NEW YORK</p>
-                        <p class="subcap">Lorem ipsum dololor sit amet, consectetuer or sit amet, consectetuer adipiscing elised diam nont, <a href="#">TAKE A TOUR</a></p>
-                    </div>
-                    <!--<p class="flex-caption">A MAGICAL OASIS IN THE HEART OF NEW YORK</p>-->
+                    <img src="img/gallery/hero-our-hotel.jpg" alt="Gallery" />
+                    <!--<p class="flex-caption">Caption</p>-->
                 </li>
                 <li>
-                    <img src="img/gallery/hero-home.jpg" alt="Gallery" />
+                    <img src="img/gallery/hero-our-hotel.jpg" alt="Gallery" />
                 </li>
             </ul>
         </div>
-        <div class="gallery_divider"></div>
+        <nav>
+            <div><a href="#" class="selected">Our Hotel</a></div>
+            <div><a href="#">Service &amp; Amenities</a></div>
+            <div><a href="#">Loyalty Program</a></div>
+            <div><a href="#">Local Guide</a></div>
+            <div><a href="#">Guest Testimonial</a></div>
+            <div><a href="#">Press Room</a></div>
+            <div><a href="#">Stories</a></div>
+        </nav>
+        <article>
+            <div class="story"><h1>OUR HISTORY</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras blandit sapien non
+                lorem adipiscing, non fringilla nunc vehicula. Vestibulum imperdiet libero sodales,
+                tempus magna non, lobortis felis. Donec tincidunt scelerisque purus ut lobortis.
+                Suspendisse rhoncus dolor at libero sagittis, sed semper lacus convallis. Aliquam
+                convallis sagittis nibh, non pellentesque metus vulputate vitae. Praesent adipiscing
+                euismod erat, quis facilisis leo volutpat in. Nulla et libero sed sapien pharetra
+                feugiat. Curabitur et lorem ullamcorper, ullamcorper quam id, porta mi. Morbi id
+                ligula viverra, dictum mauris a, rhoncus orci.
+            </p>
+            <p><img src="img/stories/books.jpg" alt="books" class="align_left" />
+                Integer feugiat dolor nec dui viverra, vel aliquam magna tempor. Aliquam congue
+                arcu ac commodo consectetur. Etiam ultricies bibendum rhoncus. Donec aliquam, lorem
+                et viverra scelerisque, enim nunc accumsan libero, at accumsan tortor ipsum a nibh.
+                Morbi lacus nunc, laoreet ultricies interdum sed, auctor vel augue. Nunc nisi diam,
+                vulputate eget sapien placerat, porttitor tempor lacus. Suspendisse potenti. Ut
+                in luctus sem. Mauris molestie cursus purus et euismod. Phasellus pellentesque elit
+                purus, at elementum lectus euismod eget. Vestibulum iaculis turpis sed pulvinar
+                dictum. Donec aliquet nulla sit amet nisi molestie, sit amet luctus arcu congue.
+                Phasellus et congue nulla. Phasellus et neque egestas, commodo mauris nec, tincidunt
+                urna. Cras id viverra quam. Maecenas bibendum orci ut nunc fermentum scelerisque.
+            </p>
+            <p>
+                Integer feugiat dolor nec dui viverra, vel aliquam magna tempor. Aliquam congue
+                arcu ac commodo consectetur. Etiam ultricies bibendum rhoncus. Donec aliquam, lorem
+                et viverra scelerisque, enim nunc accumsan libero, at accumsan tortor ipsum a nibh.
+                Morbi lacus nunc, laoreet ultricies interdum sed, auctor vel augue. Nunc nisi diam,
+                vulputate eget sapien placerat, porttitor tempor lacus. Suspendisse potenti. Ut
+                in luctus sem. Mauris molestie cursus purus et euismod. Phasellus pellentesque elit
+                purus, at elementum lectus euismod eget. Vestibulum iaculis turpis sed pulvinar
+                dictum. Donec aliquet nulla sit amet nisi molestie, sit amet luctus arcu congue.
+                Phasellus et congue nulla. Phasellus et neque egestas, commodo mauris nec, tincidunt
+                urna. Cras id viverra quam. Maecenas bibendum orci ut nunc fermentum scelerisque.
+            </p>
+           </div>
+        </article>
     </main>
-    <div id="packages">
-        <div class="package">
-            <div class="image"><img src="img/packages/promo1.jpg" alt="Sandy Relief" /></div>
-            <div class="header">Hurricane Sandy Relief</div>
-            <div class="text">Join us to support those who have been affected</div>
-        </div>
-        <div class="package">
-            <div class="image"><img src="img/packages/promo2.jpg" alt="Skyline" /></div>
-            <div class="header">Cyber Monday Extended</div>
-            <div class="text">Starting at $149 per night</div>
-        </div>
-        <div class="package">
-            <div class="image"><img src="img/packages/promo3.jpg" alt="Lobby" /></div>
-            <div class="header">Enjoy A Complimentary Drink</div>
-            <div class="text">Sign up for exclusive deals</div>
-        </div>
-        <div class="package">
-            <div class="image"><img src="img/packages/promo4.jpg" alt="New York Times" /></div>
-            <div class="header"></div>
-            <div class="text">&rsquo;<em>Absolutely wonderful deco small boutique in New York</em>&rsquo;</div>
-        </div>
-    </div>
     <footer>
         <div class="divider"></div>
         <div id="mailing_list">
