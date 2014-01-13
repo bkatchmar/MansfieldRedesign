@@ -45,6 +45,7 @@ ul.slides .flex-caption {background-color: #1a1712; margin: 0px 0px 0px 520px; b
 ul.slides .flex-caption p.maincap { font-family: "Futura D W01_SC SC Demi"; font-size: 19px; color: #fff; padding: 0px; margin: 0px; }
 ul.slides .flex-caption p.subcap { font-family: font-family: "Helvetica World W01"; font-size: 12px; color: #b6a76a; padding: 0px; margin: 0px;  }
 ul.slides .flex-caption p.subcap a:link {font-family: "Futura D W01_SC SC Demi"; font-size: 16px; color: #fff; text-decoration: none; padding: 0px; margin: 0px; }
+ul.slides .flex-caption p.subcap a:visited {color: #fff;}
 ul.slides .flex-caption p.subcap a:hover {text-decoration: underline;}
 /*ul.slides p.flex-caption { font-family: "Futura D W01_SC SC Demi"; font-size: 18px; bottom: 20px; color: #FFF; margin: 0px 0px 0px 600px; padding: 10px; position: absolute; text-align: center; }*/
 /*ul.slides p.flex-subcaption { font-family: font-family: "Helvetica World W01"; font-size: 11px; color: #b6a76a; }*/

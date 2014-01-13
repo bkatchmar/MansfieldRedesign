@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Mansfield Accommodations Page</title>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <link rel="Stylesheet" href="css/fonts.css" />
+    <link rel="Stylesheet" href="css/jquery-ui-1.10.3.custom.min.css" />
+    <link rel="Stylesheet" href="css/mansfield.css" />
+    <link rel="Stylesheet" href="css/bookingengine.css" />
+    <link rel="Stylesheet" href="flexsider/css/flexslider.css" />
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="css/mansfield.ie.css" />
+    <link rel="stylesheet" href="css/bookingengine.ie.css" />
+    <![endif]-->
+    <meta charset="UTF-8" />
+</head>
+<body>
+    <header id="primary">
+        <div class="background"></div>
+        <div id="header_primary">
+            <div id="hotel_phones">800.255.5167 &#183; 212.277.8700</div>
+            <div id="hotel_name"><img src="img/core/mansfield-logo.png" alt="The Mansfield Hotel Logo" /></div>
+            <div id="hotel_address">12 WEST 44TH STREET NYC 10036</div>
+        </div>
+        <nav>
+            <a href="#">Our Hotel</a>
+            <a href="JavaScript:void(0);" id="reservations_link" data-denihan-mode="off">Reservations</a>
+            <a href="#">Accommodations</a>
+            <a href="#">Gallery</a>
+            <a href="#">Packages</a>
+            <a href="#">Restaurant &amp; Bar</a>
+            <a href="#">Meetings &amp; Events</a>
+        </nav>
+        <div class="be">
+            <!-- Booking Form -->
+            <div class="bookingengine">
+                <div class="section">
+                    <input type="text" placeholder="Arrival Date" class="date arrive" />
+                    <input type="text" placeholder="Departure Date" class="date depart" />
+                </div>
+                <div class="section">
+                    <input type="text" class="number adult" value="1" /><span>Adults</span>
+                    <input type="text" class="number children" value="0" /><span>Children</span>
+                    <span><a id="additional_options" href="JavaScript:void(0);">Additional Options</a></span>
+                    <div class="more_options additional_options">
+                        <div><input type="text" placeholder="Promotional Code" class="option promo" /></div>
+                        <div>
+                            <select class="rate_type">
+                                <option value="1">Rate Type</option>
+                                <option value="2">Some Rate</option>
+                            </select>
+                        </div>
+                        <div><input type="text" placeholder="Group Code" class="option group" /></div>
+                    </div>
+                </div>
+                <div class="section reserve_button">
+                    <a href="#"><img src="img/core/reserve_button.png" alt="Reserve" /></a>
+                </div>
+                <div class="section last">
+                    <span><a id="best_rate_bubble" href="JavaScript:void(0);">Best Rate Guaranteed</a></span>
+                    <span class="closer"><a href="JavaScript:void(0);">X</a></span>
+                </div>
+                <div class="best_rate_promise" data-denihan-mode="on">
+                    <div class="rate_section">
+                        <p><strong>Our Best Rate Guarantee</strong></p>
+                        <p>We guarantee that you will receive the best possible rates when you book through our website, our reservation center or directly with our hotels.</p>
+                    </div>
+                    <div class="rate_section last">
+                        <p>If you find a lower rate elsewhere within 24 hours of your booking, we will:</p>
+                        <ul>
+                            <li><strong>Match the lower rate</strong></li>
+                            <li><strong>Offer a $50 credit towards your stay</strong></li>
+                            <li><strong>Provide a complimentary room upgrade</strong></li>
+                        </ul>
+                    </div>
+                    <div class="learn_more">
+                        <a href="#"><img src="img/core/learn_more.png" alt="Best Rate Promise - Learn More" /></a>
+                        <span class="best_rate_close">X</span>
+                    </div>
+                </div>
+            </div>
+            <!-- End Booking Form -->
+        </div>
+    </header>
+    <main id="page_content">
+    <br /> 
+        <nav>
+            <div><a href="#">GUEST ROOMS & SUITES</a></div>
+            	<subnav>
+                    <div><a href="#" class="selected">Guest Room Petite</a></div>
+                    <div><a href="#" class="subnav">Guest Room</a></div>
+                    <div><a href="#" class="subnav">Guest Room Deluxe 2 Beds</a></div>
+            	</subnav>
+            <div><a href="#">JUNIOR SUITE</a></div>
+            <div><a href="#">ONE BEDROOM SUITE</a></div>
+            <div><a href="#">TWO BEDROOM SUITE</a></div>
+            <div><a href="#">RENWICH DUPLEX PENTHOUSE</a></div>
+        </nav>
+        <article>
+       <!--gallery goes here- image below is FPO -->
+       <div class="gallery"><img src="img/rooms/gallery_placeholder.png" alt="placeholder for gallery" /></div>
+       <header><h1>GUEST ROOM PETITE</h1></header>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras blandit sapien non
+            lorem adipiscing, non fringilla nunc vehicula. Vestibulum imperdiet libero sodales,
+            tempus magna non, lobortis felis. Donec tincidunt scelerisque purus ut lobortis.
+            Suspendisse rhoncus dolor at libero sagittis, sed semper lacus convallis. Aliquam
+            convallis sagittis nibh, non pellentesque metus vulputate vitae. Praesent adipiscing
+            euismod erat, quis facilisis leo volutpat in. Nulla et libero sed sapien pharetra
+            feugiat. Curabitur et lorem ullamcorper, ullamcorper quam id, porta mi. Morbi id
+            ligula viverra, dictum mauris a, rhoncus orci.</p>
+            <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            </ul>
+        </article>
+    </main>
+  
+    <footer>
+        <div class="divider"></div>
+        <div id="mailing_list">
+            <table>
+                <tr>
+                    <td><img src="img/core/wax-seal-footer.png" alt="Wax Seal" /></td>
+                    <td><input type="text" placeholder="Join Mailing List" /></td>
+                    <td><a class="button_gold" href="#">JOIN</td>
+                </tr>
+            </table>
+        </div>
+        <div id="social_media">
+            <table>
+                <tr>
+                    <td>Join The Coversation:</td>
+                    <td class="icons">
+                        <img src="img/core/social/facebook.gif" alt="Facebook" />
+                        <img src="img/core/social/twitter.gif" alt="Twitter" />
+                        <img src="img/core/social/google-plus.gif" alt="Google+" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer_information"><span class="hotel_name">The Mansfield</span> 12 West 44TH Street New York, NY 10036</div>
+        <div class="footer_information">Reservations&#183;800.255.5167&#183;212.277.8700</div>
+        <nav class="footer_information">
+            <div>Site Map</div>
+            <div>Privacy Policy</div>
+            <div>Press Room</div>
+            <div>Career</div>
+            <div>Gift Cards</div>
+            <div>Contact Us</div>
+        </nav>
+        <div class="footer_information"><img src="img/core/footer_message.png" alt="The Mansfield - Part of the Denihan Collection" /></div>
+    </footer>
+
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="flexsider/js/jquery.flexslider-min.js"></script>
+    <script src="js/denihan.mansfield.toggler.js"></script>
+    <script src="js/denihan.mansfield.booking.js"></script>
+    <script src="js/denihan.mansfield.page.load.js"></script>
+</body>
+</html>

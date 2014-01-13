@@ -5,6 +5,7 @@ header#primary, main#page_content, footer { position: relative; width: 100%; }
 header#primary div#header_primary, main#page_content, footer { margin: 0px auto; }
 main#page_content, div#packages, footer { background-color: #E1D6B1; }
 
+
 /* Header Specifics */
 header#primary { background-color: #000; border-bottom: 3px solid #A79567; color: #FCFCFC; height: 150px; padding: 0px 0px 0px 0px; text-align: center; z-index: 20; }
 header#primary div.background { background: url('../img/core/header-leather-bg.png') no-repeat center; height: 172px; left: 0px; position: absolute; top: 0px; width: 100%; z-index: 20; }
@@ -23,16 +24,24 @@ header#primary div.be { height: 172px; left: 0px; margin: 0px auto; position: re
 main#page_content { background-color: #E1D6B1; color: #614D2C; display: block; padding: 25px 15px 5px; position: relative; width: 980px; z-index: 10; }
 main#page_content div#hero_image_gallery img { width: 100%; }
 main#page_content nav, main#page_content article { display: inline-block; vertical-align: top; }
-main#page_content nav { border-bottom: 3px solid #B3A870; border-top: 3px solid #B3A870; font-family: "Futura D W01_SC SC Demi"; font-size: 14px; margin: 0px 25px 0px 0px; text-transform: uppercase; width: 20%; }
+main#page_content nav { border-bottom: 3px solid #705b40; border-top: 3px solid #705b40; font-family: "Futura D W01_SC SC Demi"; font-size: 14px; margin: 0px 25px 0px 0px; text-transform: uppercase; width: 20%; }
 main#page_content nav div { border-bottom: 1px solid #B1AA66; padding: 5px 0px; }
-main#page_content nav div a:link { color: #614D2C; display: block; text-decoration: none; }
-main#page_content nav div a:visited { color: #614D2C; display: block; text-decoration: none; }
+main#page_content nav div a:link { color: #705b40; display: block; text-decoration: none; }
+main#page_content nav div a:visited { color: #705b40; display: block; text-decoration: none; }
 main#page_content nav div a.selected:link { color: #000; }
 main#page_content nav div a.selected:visited { color: #000; }
+main#page_content subnav div { padding: 5px 0px 0px 15px; text-transform: none; font-size: 14px; }
+
 main#page_content article { color: #000; font-family: "Droid Sans W01 Regular"; width: 75%; }
 main#page_content article header h1 { margin: 0px; font-family: "Futura D W01_SC SC Demi"; font-size: 20px; text-transform: uppercase; }
 main#page_content article p { font-size: 12px; }
 main#page_content article ul li { font-size: 12px; }
+main#page_content article a:link {color:#674d33; text-decoration: none;}
+main#page_content article a:visited {color:#674d33; text-decoration: none;}
+main#page_content article a:hover {text-decoration: none;}
+main#page_content article img.align_left {float: left; padding: 10px 20px;}
+main#page_content article p.align_right {float:right; width: 590px}
+main#page_content article div.gallery {padding-bottom: 20px; }
 
 /* Main Home Page Override */
 main#page_content.home { padding: 0px; width: 100%; }
@@ -60,13 +69,53 @@ footer .footer_information { font-size: 12px; padding: 3px 0px; text-align: cent
 footer nav.footer_information div { display: inline-block; padding: 0px 8px; }
 footer .footer_information span.hotel_name { padding-right: 10px; }
 
-/* Two column layout*/
-main#page_content article div#leftcol {float:left;}
-main#page_content article div#rightcol {float:right; padding: 0px 25px;}
-main#page_content article div.story {width: 333px; padding: 10px 0px 25px;}
+/* Two column layout: Stories */
+main#page_content article div#stories_leftcol {float:left; width: 333px; }
+main#page_content article div#stories_rightcol {float:right; padding: 0px 25px; width: 333px; }
+main#page_content article div.story {padding: 10px 0px 10px;}
 main#page_content article div.clearall {clear: both;}
-main#page_content article div.story h1 { margin: 0px; font-family: "Futura D W01_SC SC Demi"; color:#674d33; font-size: 26px; text-transform: uppercase; padding: 5px 0px 0px 0px; }
-main#page_content article div.story p {line-height: 1.5; padding: 0; margin: 0; }
+main#page_content article div.story h1 { margin: 0px; font-family: "Futura D W01_SC SC Demi"; color:#674d33; font-size: 26px; text-transform: uppercase; padding: 0px 0px 0px 0px; }
+main#page_content article div.story p {line-height: 1.5; padding: 10px 0px 10px; margin: 0; }
 main#page_content article div.story a:link {color:#674d33; text-decoration: none; font-weight: bold; }
+main#page_content article div.story a:visited {color:#674d33; text-decoration: none; font-weight: bold; }
 main#page_content article div.story a:hover {text-decoration: underline;}
-main#page_content article story img.align_left {float:left; margin: 0px 15px;}
+main#page_content article div.story img.align_left { float: left; padding-right: 20px; }
+
+/* Two column layout: Packages */
+main#page_content article div#packages_leftcol {float:left; padding: 0px 0px 0px 15px; width: 250px; }
+main#page_content article div#packages_rightcol {float:right; padding: 0px 170px 0px 0px; width: 250px; }
+main#page_content article div.packagepage { padding: 10px 0px 10px;}
+main#page_content article div.packagepage h1 { margin: 0px; font-family: "Futura D W01_SC SC Demi"; color: #000; font-size: 18px; text-transform: uppercase; padding: 10px 0px 0px 0px; }
+main#page_content article div.packagepage p {line-height: 1.5; padding: 10px 0px 10px; margin: 0;}
+main#page_content article div.packagepage a:link {color:#674d33; text-decoration: none; font-weight: bold; }
+main#page_content article div.packagepage a:hover {text-decoration: underline;}
+main#page_content article div.packagepage a:visited {color:#674d33; text-decoration: none; font-weight: bold; }
+main#page_content article div.packagepage img.packagetile {border: 7px solid #000;}
+main#page_content article div.packagepage span.reserve_button {float: right; padding-top: 6px; } 
+
+/* Restaurant-Bar Specifics */
+
+
+/* Book Now/Reserve buttons */
+
+.button_gold {
+border:1px solid #b5a16a; -webkit-border-radius: 1px; -moz-border-radius: 1px;border-radius: 1px;font-size:11px;
+font-family:helvetica, sans-serif; letter-spacing:1.0px; padding: 4px 6px 4px 6px; text-decoration:none; display:inline-block;font-weight:bold; color: #534419;
+background-color: #CFBF92; background-image: -webkit-gradient(linear, left top, left bottom, from(#CFBF92), to(#BDA875));
+background-image: -webkit-linear-gradient(top, #CFBF92, #BDA875);
+background-image: -moz-linear-gradient(top, #CFBF92, #BDA875);
+background-image: -ms-linear-gradient(top, #CFBF92, #BDA875);
+background-image: -o-linear-gradient(top, #CFBF92, #BDA875);
+background-image: linear-gradient(to bottom, #CFBF92, #BDA875);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#CFBF92, endColorstr=#BDA875);
+margin-top: 3px;
+}
+
+.button_gold:hover {
+border-top-color: #a28c50;border-right-color: #a28c50;border-bottom-color: #a28c50;border-left-color: #a28c50;border-width: 1px;border-style: solid;
+background-color: #CCBC94; background-image: -webkit-gradient(linear, left top, left bottom, from(#CCBC94), to(#B09653));
+background-image: -webkit-linear-gradient(top, #CCBC94, #B09653);
+background-image: -moz-linear-gradient(top, #CCBC94, #B09653);
+background-image: -ms-linear-gradient(top, #CCBC94, #B09653);
+background-image: -o-linear-gradient(top, #CCBC94, #B09653);
+background-image: linear-gradient(to bottom, #CCBC94, #B09653);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#CCBC94, endColorstr=#B09653);
+}

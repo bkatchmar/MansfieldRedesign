@@ -1,0 +1,10 @@
+﻿header#primary div#header_primary div, 
+div#packages div.package, 
+div.bookingengine div.section div.more_options div, 
+footer div#mailing_list, 
+footer div#social_media, 
+footer nav.footer_information div
+{
+    zoom:1;
+    *display:inline;
+}
