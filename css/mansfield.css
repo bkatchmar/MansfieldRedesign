@@ -5,7 +5,6 @@ header#primary, main#page_content, footer { position: relative; width: 100%; }
 header#primary div#header_primary, main#page_content, footer { margin: 0px auto; }
 main#page_content, div#packages, footer { background-color: #E1D6B1; }
 
-
 /* Header Specifics */
 header#primary { background-color: #000; border-bottom: 3px solid #A79567; color: #FCFCFC; height: 150px; padding: 0px 0px 0px 0px; text-align: center; z-index: 20; }
 header#primary div.background { background: url('../img/core/header-leather-bg.png') no-repeat center; height: 172px; left: 0px; position: absolute; top: 0px; width: 100%; z-index: 20; }
